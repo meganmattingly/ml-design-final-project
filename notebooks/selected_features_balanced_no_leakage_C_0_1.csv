@@ -1,11 +1,12 @@
 selected_feature
 country
-music_suggestion_rating_1_to_5
+age
+subscription_type
 avg_listening_hours_per_week
-primary_device
+favorite_genre
+most_liked_feature
+desired_future_feature
 playlists_created
-avg_skips_per_day
-dislikes_suggestions
 heavy_listener
 many_playlists
-new_user
+days_since_signup_start

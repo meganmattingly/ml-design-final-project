@@ -1,13 +1,12 @@
 selected_feature
 country
+age
 subscription_type
-ad_interaction
-avg_listening_hours_per_week
+music_suggestion_rating_1_to_5
 favorite_genre
+most_liked_feature
 desired_future_feature
-primary_device
 playlists_created
-likes_personalization
 dislikes_suggestions
 heavy_listener
 many_playlists
