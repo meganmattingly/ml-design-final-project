@@ -8,8 +8,15 @@ app = FastAPI(title="Spotify Churn Prediction API")
 
 mlflow.set_tracking_uri("http://127.0.0.1:5000")
 
-MODEL_URI = "models:/spotify_churn_logreg_clean/2"
+#MODEL_URI = "models:/spotify_churn_logreg_clean/2"
+#model = mlflow.sklearn.load_model(MODEL_URI)
+
+#Automatically get the latest version of the model, regardless of the number 
+client = mlflow.tracking.MlflowClient()
+latest_version = client.get_latest_versions("spotify_churn_logreg_clean")[0].version
+MODEL_URI = f"models:/spotify_churn_logreg_clean/{latest_version}"
 model = mlflow.sklearn.load_model(MODEL_URI)
+
 
 
 class ChurnInput(BaseModel):
