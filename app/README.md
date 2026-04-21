@@ -7,27 +7,28 @@ This directory contains the scripts needed for the prototype of our Spotify cust
 ## Prerequisites
 
 Ensure there is a model registered in MLflow Model Registry. Launch the MLflow UI by running the following command in the terminal: 
-    ```bash
-    # Start MLflow UI for visualization
-    mlflow ui --port 5000
-    ```
+
+```bash
+# Start MLflow UI for visualization
+mlflow ui --port 5000
+```
 
 ## Running the FastAPI Server
 
 We chose to use uvicorn to run the server. In a new terminal, run:
 
-    ```bash
-    uvicorn app.main:app 
-    ```
+```bash
+uvicorn app.main:app 
+```
 The API server will be available at: http://localhost:8000/docs 
 
 ## Running the Streamlit Dashboard
 
 The dashboard can be directly executed using the following command:
 
-    ```bash
-    streamlit run app/streamlit_app.py
-    ```
+```bash
+streamlit run app/streamlit_app.py
+```
 The dashboard will be available at:
 
 ## Using the Dashboard
